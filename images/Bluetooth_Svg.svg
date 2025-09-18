@@ -1,0 +1,14 @@
+<svg width="123" height="129" viewBox="0 0 123 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 76">
+<rect id="Rectangle 31" width="122.426" height="128.473" rx="50" fill="url(#paint0_linear_478_110)" fill-opacity="0.6"/>
+<g id="bluetooth">
+<path id="icon" d="M58.0835 93.1667V71L44.6668 84.4167L40.5835 80.3334L56.9168 64L40.5835 47.6667L44.6668 43.5834L58.0835 57V34.8334H61.0002L77.6252 51.4584L65.0835 64L77.6252 76.5417L61.0002 93.1667H58.0835ZM63.9168 57L69.4585 51.4584L63.9168 46.0625V57ZM63.9168 81.9375L69.4585 76.5417L63.9168 71V81.9375Z" fill="#1D1B20"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_478_110" x1="0" y1="64.2366" x2="122.426" y2="64.2366" gradientUnits="userSpaceOnUse">
+<stop offset="0.5" stop-color="#0A0099"/>
+<stop offset="0.9999" stop-color="#F1C6CD"/>
+</linearGradient>
+</defs>
+</svg>

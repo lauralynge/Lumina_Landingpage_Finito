@@ -1,0 +1,739 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+/* Her importeres Fonten */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Zen+Tokyo+Zoo&display=swap');
+
+
+/* Sådan bruger du fontene, her "Permanent marker*/
+.monoton-regular{
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+*/
+
+/*typografi*/
+
+/*zen Tokyo zoo - Logo font*/
+.zen-tokyo-zoo-regular {
+  font-family: "Zen Tokyo Zoo", system-ui;
+  font-weight: 400;
+  font-style: normal;}
+  
+/*jost - brødtekst font*/
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* eller fjern denne linje hvis ikke nødvendig */
+  font-style: normal;
+}
+
+:root{
+/* typografi */
+  --overskrifter:"Zen Tokyo Zoo", sans-serif; 
+  --overrubrikker:"Jost", sans-serif;
+}
+  
+/* NAVIGATION */
+
+/* Wrapper for top navigation to align left and right*/
+
+.topNavWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* baggrundsfarve i navigationen*/
+.topNavWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #F2C7CE; /* Samme farve til hele navigationen */
+  
+}
+
+/* Fjerner stregen under linket */
+#topNavVenstre a,
+#topNavHoejre a {
+  color: rgb(3, 3, 3);
+  font-size: 20px;
+  text-decoration: none; 
+}
+
+/* Hover effekt på ikoner */
+.topNavWrapper a:hover{
+  background-color: #DDB9CB;
+  color: #650A08;
+  cursor: pointer;
+  box-shadow: 0 6px 16px 0 rgba(49,49,49,0.3);
+}
+
+#topNavVenstre img[alt*="hjert"],
+#topNavHoejre img[alt*="hjert"],
+#topNavVenstre img[alt*="loop"],
+#topNavHoejre img[alt*="loop"] {
+  transition: transform 0.3s;
+}
+
+#topNavVenstre img[alt*="hjert"]:hover,
+#topNavHoejre img[alt*="hjert"]:hover,
+#topNavVenstre img[alt*="loop"]:hover,
+#topNavHoejre img[alt*="loop"]:hover {
+  transform: scale(1.2) rotate(-8deg);
+}
+#topNavVenstre img:not([alt*="hjert"]):not([alt*="loop"]),
+#topNavHoejre img:not([alt*="hjert"]):not([alt*="loop"]) {
+  transition: transform 0.3s;
+}
+
+#topNavVenstre img:not([alt*="hjert"]):not([alt*="loop"]):hover,
+#topNavHoejre img:not([alt*="hjert"]):not([alt*="loop"]):hover {
+  transform: scale(1.2);
+}
+
+/* H1 med ny font */
+h1 {
+  font-size: 1rem;
+  color: #38040E; /* Mørkere farve for bedre kontrast */
+  letter-spacing: 20px;
+  font-weight: 100; /* Kraftigere tekst */
+  text-shadow: 20px 20px 20px #F2C7CE, 0 0 2px #F2C7CE; /* Giver klarhed og effekt */
+} 
+
+
+/*Venstre navigation*/
+#topNavVenstre{
+  background-color: #F2C7CE;
+  height: center;
+  margin-left: 20px;
+}
+
+#topNavVenstre a {
+  color: #38040E;
+font-size: 30px;
+}
+
+#topNavVenstre ul {
+  display: flex;
+  gap: 20px; /* afstand mellem ikonerne */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#topNavVenstre img,
+#topNavHoejre img {
+  transition: transform 0.3s;
+}
+
+#topNavVenstre img:hover,
+#topNavHoejre img:hover {
+  transform: scale(1.2) rotate(-8deg);
+}
+
+
+/* Højre navigation*/
+#topNavHoejre{
+  background-color: #F2C7CE;
+  height: center;
+  margin-right: 20px;
+}
+
+#topNavHoejre a {
+ color:#38040E;
+font-size: 30px;
+}
+
+#topNavHoejre ul {
+  display: flex;
+  gap: 20px; /* afstand mellem ikonerne */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topNavWrapper {
+  height: 60px; /* eller fx 10vh, juster efter behov */
+}
+
+
+/* BODY */
+body {
+  background-color: #FFFDF8; /* Lys beige farve */;
+}
+
+
+/* HERO SEKTION */
+
+/* CTA knap */
+button {
+  transition: transform 0.3s;
+  background-color: #F2C7CE;
+  color: #650A08;
+  border: none;
+  padding: 35px 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px 0 rgba(49, 49, 49, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-top: 900px;
+  margin-left: 830px; 
+  position:  absolute;
+  top: -20%;
+  left: 0%;
+}
+button:hover {
+  transform: scale(1.08);
+  background-color: #DDB9CB;
+  color: #650A08;
+  cursor: pointer;
+  box-shadow: 0 6px 16px 0 rgba(49,49,49,0.3);
+}
+
+
+/* Hero baggrundsbillede */
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/Frame.svg);
+  background-size: cover;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-size: 118%;
+}
+
+/* Hero Lumina tekst */
+.hero-text {
+  position: absolute;
+  top: 10%;
+  margin-left: 50px;
+}
+
+.hero-text img {
+  width: 850px;
+  height: auto;
+}
+
+/* Højtaler billede*/
+.højtaler-billede {
+  display: flex;
+  justify-content: flex-end;
+}
+.højtaler-billede img {
+  width: 500px;
+  height: auto;
+  margin-top: -750px;
+  margin-right: 70px;
+  position: absolute;
+  top: 98%;
+  right: 0%;
+}
+
+.pris-tekst {
+  font-size: 1rem;
+  color: #38040E;
+  margin-top: 10px; 
+  text-align: right;
+  position: absolute;
+  top: 78%;
+  right: 6%;
+}
+
+/* MAIN SEKTION */
+
+/* Ikoner i flexbox */
+
+.ikon-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: auto; /* afstand mellem ikonerne */
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 80px; 
+  margin-bottom: 80px;
+} 
+
+.ikon-wrapper {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.ikon img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* ikon baggrund */
+.ikon {   
+  background: linear-gradient(145deg, #0A0099,#F1C6CD);
+  padding: 40px;
+  border-radius: 60px;
+  box-shadow: 0 0 1px 0 rgba(133, 131, 131, 0.661);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tekster under ikon-bokse */
+
+/* Overskrift under ikon-bokse */
+.ikon-wrapper h3 {
+  font-family: 'plus-jakarta-sans', sans-serif;
+  font-size: 2rem; 
+  font-weight: bold;
+  color: #0A0099;
+  margin-top: 50px;
+  text-align: left; -ms-flex-align: start;
+}
+
+/* Brødtekst under ikon-bokse */
+.ikon-wrapper p {
+  font-family: 'plus-jakarta-sans', sans-serif;
+  font-size: 1rem;
+  color: #38040E;
+  margin-top: 30px;
+  text-align: center, left-center;
+  width: 300px; 
+}
+
+
+/* Baggrundsbillede den anden blå bølge */
+.bølge-baggrund_2 {
+  position: relative;
+  height: 50vh;
+  background-image: url(../images/Group\ 73.svg);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 118%;
+}
+
+
+/* STEMNINGSBILLEDER (CECILIE) */
+
+/* picnic billede */
+.picnic-img {
+  width: 500px;    /* Juster størrelse efter behov */
+  height: auto;
+  border-radius: 20px;
+  margin: 100px auto;
+  display: block;
+  float: left;
+  margin-top: -100px;
+  margin-bottom: 100px;
+} 
+
+.danse-slogan-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  float:  none;
+  gap: 20px;           
+  margin-top: -300px;
+  margin-right: 100px;
+}
+
+.danse-img {
+  width: 750px;        /* Juster størrelse efter behov */
+  height: auto;
+  float:right; 
+  margin-right: 110px;  /* Juster afstand efter behov */
+  border-radius: 20px;
+}
+
+.h8-flex {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  color: #38040E;
+  letter-spacing: 2px;
+  margin-left: 800px;
+  margin-top: 900px;
+  white-space: nowrap;
+  text-align: left;
+  margin-right: -700px;
+}
+
+
+/* STYLING TRUSTPILOT KOLONNER */
+
+/* mia To kolonner side om side */ 
+* {
+  box-sizing: border-box;
+}
+
+/*  mia Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%; /* hver kolonne tager 50% af bredden*/ 
+  padding: 0px; /* plads inde i kolonnerne */
+  height: 350px; /* juster højden efter behov */
+  margin-top: 0%;
+  margin-bottom: 0px;
+  shape-margin: 100px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* h2 overskrift over kolonnerne */
+h2 {
+  font-family: var(--overrubrikker);
+  font-size: 6rem;
+  color:#F1C6CD;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+/* mia profilbillede i kolonnerne */
+.column img {
+  width: 45%; /* billedet fylder hele kolonnen */
+  height: auto; /* bevarer billedets proportioner */
+}
+
+/* mia ryk profilbillede til højre */
+.column img {
+  display: block;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+/* mia tekst under profilbillede */
+.column p {
+  font-family: 'plus-jakarta-sans', sans-serif;
+  color: #38040E;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right:auto;
+}
+
+/* tekst centrering */
+.column p {
+display: block;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+/* mia Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table; 
+  clear: both; 
+}
+
+/* mia trustpilot billede i bunden af midten */
+.trustpilot-billede {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.trustpilot-billede img {
+  width: 150px; /* juster størrelsen efter behov */
+  height: auto;
+}
+
+/* Grøn højtaler billede */
+
+.billede-tekst-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+align-items: baseline;
+
+}
+.grøn-højtaler-img {
+  display: flex;
+  width: 600px;
+  height: auto;
+  align-items: right;
+  gap: 20px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-bottom: 250px;
+} 
+
+.tekst {
+  font-family: 'Just', sans-serif;
+  font-size: 1px; 
+  align-items: left;  
+  color: black;
+  letter-spacing: 1px;
+  margin-left: 800px;
+  margin-top: -900px;
+  margin-bottom: 250px;
+  
+}
+
+
+/* STYLING AF HØJTALERENS FUNKTIONER SEKTION */
+.HøjtalerFunk {
+ margin: auto;
+ margin-top: 20px;
+ margin-bottom: -900px;
+ margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HøjtalerFarver {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 280px; /* Rykker farverne længere ind mod højre */
+  margin-top: 1000px;
+  width: 100%;
+  margin-bottom: -1100px;
+}
+
+
+
+/* Brødteksten under højtalerens funktion */
+div p {
+  font-family: 'plus-jakarta-sans', sans-serif;
+  color: #38040E;
+  font-size: 1rem; 
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+div p1 {font-family: 'plus-jakarta-sans', sans-serif;
+  color: #38040E;
+  font-size: 1rem; 
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 1.5;  
+}
+
+
+
+/* 3. BØLGE */
+.bølge-baggrund_3 {
+  position: relative;
+  height: 150vh;
+  background-image: url(../images/Group\ 74.svg);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  margin-left: 400px;   /* rykker til højre */
+
+}
+
+
+/* STYLING AF FOOTER */
+footer h1{
+  font-family: "Zen Tokyo Zoo", system-ui;
+  font-weight: 400; font-style: normal;
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #38040E;
+  line-height: 1.6;
+  letter-spacing: 4px;
+}
+
+footer {
+  background-color:#F5E1E1;
+  padding: 80px 0 40px 0;
+  color: #38040E;
+  font-size: 16px;
+  font-family: Jost, sans-serif;
+}
+
+.footer-col:not(:first-child) {
+  margin-top: 25px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  line-height: 2;
+}
+
+.footer-col h5 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: Jost, sans-serif;
+}
+.footer-col h5:nth-of-type(2) {
+  margin-top: 30px;
+}
+.footer-col:last-child {
+  min-width: 450px; /* Øg bredden */
+}
+.footer-col h5 {
+  font-size: 17px;
+}
+
+.footer-col a {
+  color: #38040E;
+  text-decoration: none;
+  font-size: 15px;
+  margin-bottom: 4px;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: #38040E;
+}
+
+.footer-email {
+  padding: 8px;
+  border: 1px solid #38040E;
+  background-color: #fdeff1;
+  color: #000;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.footer-col button { 
+  padding: 8px 16px;
+  background: #38040E;
+  color: #F9DDE1;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.footer-col button:hover {
+  background: #b3004b;
+}
+.footer-col form {
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+.footer-col:last-child h5:first-child {
+  margin-bottom: 0px; /* Allerede sat til 0, så ingen afstand */
+}
+
+.footer-col:last-child form {
+  margin-top: 0; /* Ingen ekstra afstand over formen */
+}
+
+.footer-col:last-child {
+  gap: 0px; /* Ingen vertikal afstand mellem elementer i kolonnen */
+}
+.footer-email {
+  margin-right: 0;
+}
+.footer-join-btn {
+  margin-left: 1366px;
+  margin-top: 6286px;
+  width: 100px;
+}
+/* ...eksisterende kode... */
+footer h6 {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  margin-top: auto;
+  color: #38040E;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer-col {
+    min-width: 0;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPEKTIVE DESIGNS */
+
+/*Mobile Enheder */
+
+@media(max-width: 600px)
+{
+  body{background-color: aquamarine;}
+  #Stemning {display:block;}
+}
+
+
+
+/* Tablets, Ipads, Osv. */
+
+@media(min-width: 601px) and (max-width: 1024px) 
+{
+  body{background-color: blue;}
+  #Stemning {display:block;}
+}

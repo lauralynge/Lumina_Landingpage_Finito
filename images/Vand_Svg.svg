@@ -1,0 +1,15 @@
+<svg width="123" height="129" viewBox="0 0 123 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 77">
+<rect id="Rectangle 33" width="122.426" height="128.473" rx="50" fill="url(#paint0_linear_478_111)" fill-opacity="0.6"/>
+<g id="Droplet">
+<path id="Icon" d="M61.0002 36.8458L76.0935 53.3542C79.0784 56.6168 81.1116 60.7743 81.9359 65.301C82.7602 69.8276 82.3385 74.52 80.7243 78.7845C79.11 83.049 76.3757 86.694 72.8671 89.2586C69.3586 91.8232 65.2335 93.1921 61.0135 93.1921C56.7936 93.1921 52.6685 91.8232 49.1599 89.2586C45.6513 86.694 42.917 83.049 41.3028 78.7845C39.6885 74.52 39.2668 69.8276 40.0911 65.301C40.9154 60.7743 42.9486 56.6168 45.9335 53.3542L61.0002 36.8458Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_478_111" x1="0" y1="64.2366" x2="122.426" y2="64.2366" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1100FF"/>
+<stop offset="0.5" stop-color="#0A0099"/>
+<stop offset="0.9999" stop-color="#F1C6CD"/>
+</linearGradient>
+</defs>
+</svg>
